@@ -2,7 +2,8 @@ import React from "react";
 import { BsGithub, BsLinkedin} from "react-icons/bs";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoLogoInstagram } from "react-icons/io5";
-
+import { GrContact } from "react-icons/gr";
+  
 export default function Header() {
   return (
     <div className="container mx-auto max-w-[1200px] px-3 relative lg:absolute left-0 right-0 ">
@@ -57,6 +58,14 @@ export default function Header() {
             rel="noopener noreferrer"
           >
             <IoLogoInstagram size={20} />
+          </a>
+
+          <a
+            href="https://wa.me/6285659100260"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GrContact size={20}/>
           </a>
         </div>
       </div>

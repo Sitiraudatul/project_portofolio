@@ -3,30 +3,34 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
+import pemwebImg from "../assets/images/pemweb.jpg"
+import iot1Img from "../assets/images/iot1.jpg"
+import iot2Img from "../assets/images/iot2.jpg"
+import iot3Img from "../assets/images/iot3.jpg"
+import aljutImg from "../assets/images/aljut.jpg"
+import delphiImg from "../assets/images/delphi.jpg"
 
 const projects = [
   {
     title: "Website Pemrograman Web",
-    image: ["images/pemweb.jpg"],
-    description: "Website toko bunga dengan fitur CRUD.",
-    fullDescription:
-      "Website toko bunga berbasis PHP OOP dan MySQL. Memiliki fitur lengkap seperti registrasi, login, transaksi pembelian bunga, dan dashboard admin dengan CRUD produk. Dibuat menggunakan HTML, CSS, Bootstrap, dan PHP murni dengan konsep OOP dan koneksi database menggunakan MySQLi.",
+    image: [pemwebImg],
+    description: "Website toko bunga dengan fitur CRUD menggunakan PHP & MySQL.",
+    fullDescription: "Website toko bunga berbasis PHP OOP dan MySQL, dengan fitur CRUD (Create, Read, Update, Delete) untuk mengelola data produk dan transaksi.",
   },
   {
     title: "Project IOT",
-    image: ["images/iot1.jpg", "images/iot2.jpg", "images/iot3.jpg"],
-    description: "Sistem alarm rumah otomatis & River Cleaner IOT.",
-    fullDescription:
-      "Project terdiri dari 2 alat IOT: (1) Sistem alarm rumah berbasis sensor gerak dan notifikasi melalui smartphone, serta (2) River Cleaner yang dapat mendeteksi sampah di sungai dan secara otomatis mengangkatnya menggunakan lengan mekanik. Proyek dikerjakan dengan ESP32, sensor ultrasonic, servo, dan koneksi Blynk.",
+    image: [iot1Img, iot2Img, iot3Img, aljutImg,],
+    description: "Sistem alarm rumah otomatis & alat pembersih sungai berbasis IOT.",
+    fullDescription: "Project terdiri dari 2 alat IOT: (1) Sistem alarm otomatis untuk keamanan rumah menggunakan sensor gerak, dan (2) River Cleaner untuk membersihkan sampah di sungai secara otomatis.",
   },
   {
     title: "Aplikasi Delphi",
-    image: ["images/delphi.jpg"],
-    description: "Aplikasi GUI manajemen data sekolah.",
-    fullDescription:
-      "Aplikasi desktop berbasis Delphi yang digunakan untuk memanajemen data sekolah. Fitur mencakup input dan pengelolaan data siswa, guru, mata pelajaran, dan jadwal. Data disimpan dalam database lokal, dan antarmuka dibuat dengan komponen GUI seperti form input, tabel, serta menu navigasi."
-  },  
+    image: [delphiImg],
+    description: "Aplikasi desktop Delphi untuk manajemen data siswa & guru.",
+    fullDescription: "Aplikasi desktop berbasis Delphi dengan antarmuka GUI, digunakan untuk mencatat, mengedit, dan menghapus data siswa dan guru di lingkungan sekolah.",
+  },
 ];
+
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
