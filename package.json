@@ -2,7 +2,9 @@
   "name": "portfolio1-starter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Sitiraudatul/myportofolio.git",
+  "homepage": "https://github.com/Sitiraudatul/project_portofolio.git",
+  "predeploy":"npm run build",
+  "deploy":"gh-pages -d build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
