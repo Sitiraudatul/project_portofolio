@@ -4,37 +4,37 @@ import SkillCard from "./SkillCard"; // pastikan path-nya sesuai dengan lokasi f
 const skills = [
   {
     title: "HTML",
-    image: "/images/4.png",
+    image: "images/4.png",
     description:
       "Saya memahami struktur dasar website dan pengaturan elemen-elemen HTML untuk membangun sebuah halaman yang rapi dan mudah dipahami.",
   },
   {
     title: "PHP",
-    image: "/images/php_img.png",
+    image: "images/php_img.png",
     description:
       "Saya familiar dengan PHP sebagai bahasa pemrograman server-side untuk pengembangan aplikasi web dinamis.",
   },
   {
     title: "Bootstrap",
-    image: "/images/2.png",
+    image: "images/2.png",
     description:
       "Dengan menggunakan Bootstrap, saya mampu membuat tampilan website yang responsif dan menarik untuk berbagai ukuran layar.",
   },
   {
     title: "Python",
-    image: "/images/python.jpeg",
+    image: "images/python.jpeg",
     description:
       "Saya mengasah keterampilan Python untuk mendalami bidang data science dan machine learning.",
   },
   {
     title: "JavaScript",
-    image: "/images/js_img.png",
+    image: "images/js_img.png",
     description:
       "Saya sedang mengembangkan kemampuan dalam menggunakan JavaScript untuk interaksi lebih dinamis pada halaman web.",
   },
   {
     title: "MySQL",
-    image: "/images/MySQL.png",
+    image: "images/MySQL.png",
     description:
       "Saya memahami konsep dasar database dan menggunakan MySQL untuk pengelolaan data pada aplikasi web.",
   },
@@ -62,7 +62,7 @@ export default function Profile() {
         <div className="flex flex-col lg:flex-row items-start justify-between">
           <div className="text-center w-full max-w-[400px] mx-auto mb-[50px]">
             <div className="min-w-[300px] bg-gradient rounded-full overflow-hidden">
-              <img src="/images/d1.jpg" alt="profile" />
+              <img src="images/d1.jpg" alt="profile" />
             </div>
             <h2 className="text-gradient font-[50px] mt-[20px]">
               Siti Raudatul Jannah Fadilah
